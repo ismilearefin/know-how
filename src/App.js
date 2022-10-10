@@ -4,6 +4,7 @@ import './App.css';
 import Home from './component/Home/Home';
 
 import Main from './component/Main/Main';
+import Quiz from './component/Quiz/Quiz';
 
 
 
@@ -16,6 +17,11 @@ function App() {
         // {path:'topics', element:<p>I am Topics</p>},
         {path:'statistics', element:<p>I am Statistics</p>},
         {path:'blog', element:<p>I am Blog</p>},
+        {path:'card/:id',
+        loader:({params})=>{
+          return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+        },
+        element:<Quiz></Quiz>},
     ]}
   ])
   return (

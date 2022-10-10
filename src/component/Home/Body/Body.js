@@ -29,7 +29,7 @@ function Contant(props){
                 <p>{total}</p>
             </div>
             <div className='m-2 '>
-            <Link to={`card/${id}`}><button className='w-full font-bold bg-blue-200 rounded-md py-1 hover:bg-blue-400'>Start</button></Link>
+            <Link to={`/card/${id}`}><button className='w-full font-bold bg-blue-200 rounded-md py-1 hover:bg-blue-400'>Start</button></Link>
             </div>
         </div>
     )
