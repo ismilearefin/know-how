@@ -10,7 +10,9 @@ import Main from './component/Main/Main';
 function App() {
   const router = createBrowserRouter([
     {path:'/',element:<Main></Main>,children:[
-        {path:'/',element:<Home></Home>},
+        {path:'/',
+        loader:()=>fetch('https://openapi.programming-hero.com/api/quiz'),
+        element:<Home></Home>},
         {path:'topics', element:<p>I am Topics</p>},
         {path:'statistics', element:<p>I am Statistics</p>},
         {path:'blog', element:<p>I am Blog</p>},
