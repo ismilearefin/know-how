@@ -5,8 +5,8 @@ const Body = (props) => {
     const quiz = props.quizs
     // console.log(quiz)
     return (
-        <div className='my-10 lg:flex justify-center'>
-           <div className='lg:grid grid-cols-4 gap-4 w-9/12 '>
+        <div className='my-10 flex justify-center'>
+           <div className='lg:grid grid-cols-4 gap-4 w-4/5 '>
            {
                 quiz.map(singleQuiz => <Contant key={singleQuiz.id} singleQuiz={singleQuiz}></Contant>)
             }
@@ -20,16 +20,16 @@ function Contant(props){
     const {id,name,logo,total} = props.singleQuiz
     // console.log(props)
     return(
-        <div className='border'>
+        <div className='border mb-4'>
             <div className='bg-blue-200 m-2 rounded-lg'>
                 <img src={logo}  alt="Logo"/>
             </div>
-            <div>
-                <p>Name :{name}</p>
+            <div className='flex justify-between px-4'>
+                <p className='text-base font-bold'>{name}</p>
                 <p>{total}</p>
             </div>
             <div className='m-2 '>
-                <button className='w-full bg-blue-200 rounded-md py-1' ><Link to={`card/${id}`}>Start</Link></button>
+            <Link to={`card/${id}`}><button className='w-full font-bold bg-blue-200 rounded-md py-1 hover:bg-blue-400'>Start</button></Link>
             </div>
         </div>
     )
