@@ -5,7 +5,6 @@ import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts'
 
 const Statistics = () => {
     const quizs = useLoaderData();
-    console.log(quizs.data)
     const data = quizs.data
     return (
         <div className='min-h-screen flex justify-center items-center'>
