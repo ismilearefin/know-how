@@ -4,7 +4,7 @@ import { EyeIcon} from '@heroicons/react/24/solid'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import './Quiz.css'
+
 
 
 const Quiz = () => {
@@ -71,7 +71,7 @@ function Options({option,setAns}){
     // console.log(setAns)
     return(
     <div>   
-        <div className='border p-2 hover:shadow-lg lg:p-5' onClick={()=>setAns(option)}>
+        <div className='border-blue-700 border p-2 hover:shadow-lg lg:p-5' onClick={()=>setAns(option)}>
             <p>{option}</p>
         </div>
     </div>
