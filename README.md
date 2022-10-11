@@ -74,8 +74,10 @@ Know-How
 - [https://funny-biscotti-198b95.netlify.app/]
 ## Tailwind CSS
 I designed the whole website with Tailwindcss [https://tailwindcss.com/]
+## daisyUI
+Navbar from daisyUI [https://daisyui.com/components/navbar/]
 ## Flowbite
-Navbar & Header from Flowbite [https://flowbite.com/]
+Header from Flowbite
 ## Full Website Responsive
 TailwindCss
 ## HeroIcon
