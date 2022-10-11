@@ -21,20 +21,18 @@ const Header = () => {
           <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
             <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
               <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-                Brand new
+                Know-How
               </p>
               <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                Everything you
+              Why need 
                 <br className="hidden md:block" />
-                can imagine{' '}
+                to choose a {' '}
                 <span className="inline-block text-deep-purple-accent-400">
-                  is real
+                Programming Language
                 </span>
               </h2>
               <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae. explicabo.
+              A programming language is instructions wrote by developers/programmers that a computer will understand to do what a computer user or programmer wants it to do. Programming is also known to some users as a computer..
               </p>
               <div className="flex items-center">
                 <a
