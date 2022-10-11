@@ -32,8 +32,10 @@ const Quiz = () => {
 function Question({question}){
     const options = question.options
     const rightAns = question.correctAnswer
+    const faq = question.question;
+    const newFaq = faq.split('<p>')
+    const afterchange = newFaq[1].split('</p>')
     
-    // console.log(rightAns);
     function setAns(x){
         if(x === rightAns){
             toast.success('Right Ans!', {
@@ -55,8 +57,8 @@ function Question({question}){
         <div className='flex justify-end'>
                 <EyeIcon onClick={eyeIcon} className="h-6 w-6 text-blue-800"/>
         </div>
-        <div className='p-8 h-2/4 flex justify-center items-center lg:p-0' >
-                <h1 className='text-base font-bold'>{question.question}</h1>
+        <div className='p-8 h-2/4 flex justify-center items-center lg:p-0'>
+                <h1 className='text-base font-bold'>{afterchange[0]}</h1>
         </div>
         <div className='lg:grid grid-cols-2 gap-2 items-center  '>
             {
